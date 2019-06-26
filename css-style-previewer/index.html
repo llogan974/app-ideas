@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Scoped CSS Variables and JS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="body">
+    <h2>Update CSS Variables with <span class='hl'>JS</span></h2>
+
+    <div class="controls">
+        <label for="spacing">Spacing:</label>
+        <input id="spacing" type="range" name="spacing" min="10" max="200" value="10" data-sizing="px">
+
+        <label for="blur">Blur:</label>
+        <input id="blur" type="range" name="blur" min="0" max="25" value="10" data-sizing="px">
+
+        <label for="base">Base Color</label>
+        <input id="base" type="color" name="base" value="#99badd">
+    </div>
+
+
+    <img src="https://source.unsplash.com/7DZLso1wm3w/800x500">
+
+    <div class="controls">
+        <label for="borderradius">borderradius:</label>
+        <input id="borderradius" type="range" name="borderradius" min="1" max="200" value="50" data-sizing="px">
+
+        <label for="opacity">opacity:</label>
+        <input id="opacity" type="range" name="opacity" min="0" max="1.0" step="0.05" value="1" data-sizing="">
+
+        <label for="grayscale">grayscale:</label>
+        <input id="grayscale" type="range" name="grayscale" min="0" max="100" value="50" data-sizing="%">
+
+
+    </div>
+    <div>
+        <label for="checkbox">Check for fullwidth</label>
+        <input type="checkbox" name="checkbox" id="checkbox">
+
+        <label for="customimage">customimage</label>
+        <input type="file" name="customimage" id="customimage">
+
+        <form id="form">
+            <label for=" backgroundcolor">backgroundcolor</label>
+            <input type="text" name="backgroundcolor" id="backgroundcolor" minlength="3" maxlength="9" size="20">
+            <button type="submit">submit</button>
+        </form>
+
+
+
+    </div>
+
+
+</body>
+<script src="main.js"></script>
+
+<div class="list">
+    Choose a background color from these options: </br>
+
+    silver
+    gray
+    white
+    maroon
+    red
+    purple
+    fuchsia
+    green
+    lime
+    olive
+    yellow
+    navy
+    blue
+    teal
+    aqua
+
+
+    antiquewhite
+    aquamarine
+    azure
+    beige
+    bisque
+    blanchedalmond
+    blueviolet
+    brown
+    burlywood
+    cadetblue
+    chartreuse
+    chocolate
+    coral
+    cornflowerblue
+    cornsilk
+    crimson
+    cyan
+    (synonym of aqua)
+    darkblue
+    darkcyan
+    darkgoldenrod
+    darkgray
+    darkgreen
+    darkgrey
+    darkkhaki
+    darkmagenta
+    darkolivegreen
+    darkorange
+    darkorchid
+    darkred
+    darksalmon
+    darkseagreen
+    darkslateblue
+    darkslategray
+    darkslategrey
+    darkturquoise
+    darkviolet
+    deeppink
+    deepskyblue
+    dimgray
+    dimgrey
+    dodgerblue
+    firebrick
+    floralwhite
+    forestgreen
+    gainsboro
+    ghostwhite
+    gold
+    goldenrod
+    greenyellow
+    grey
+    honeydew
+    hotpink
+    indianred
+    indigo
+    ivory
+    khaki
+    lavender
+    lavenderblush
+    lawngreen
+    lemonchiffon
+    lightblue
+    lightcoral
+    lightcyan
+    lightgoldenrodyellow
+    lightgray
+    lightgreen
+    lightgrey
+    lightpink
+    lightsalmon
+    lightseagreen
+    lightskyblue
+    lightslategray
+    lightslategrey
+    lightsteelblue
+    lightyellow
+    limegreen
+    linen
+    magenta
+    (synonym of fuchsia)
+    mediumaquamarine
+    mediumblue
+    mediumorchid
+    mediumpurple
+    mediumseagreen
+    mediumslateblue
+    mediumspringgreen
+    mediumturquoise
+    mediumvioletred
+    midnightblue
+    mintcream
+    mistyrose
+    moccasin
+    navajowhite
+    oldlace
+    olivedrab
+    orangered
+    orchid
+    palegoldenrod
+    palegreen
+    paleturquoise
+    palevioletred
+    papayawhip
+    peachpuff
+    peru
+    pink
+    plum
+    powderblue
+    rosybrown
+    royalblue
+    saddlebrown
+    salmon
+    sandybrown
+    seagreen
+    seashell
+    sienna
+    skyblue
+    slateblue
+    slategray
+    slategrey
+    snow
+    springgreen
+    steelblue
+    tan
+    thistle
+    tomato
+    turquoise
+    violet
+    wheat
+    whitesmoke
+    yellowgreen
+
+
+</div>
+
+</html>

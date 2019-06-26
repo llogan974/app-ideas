@@ -1,0 +1,44 @@
+:root {
+    --base: #99badd;
+    --spacing: 10px;
+    --blur: 10px;
+    --borderradius: 50px;
+    --opacity: 1;
+    --grayscale: 50%;
+  }
+  img {
+    padding: var(--spacing);
+    background: var(--base);
+    /* filter: blur(var(--blur)); */
+    border-radius: var(--borderradius);
+    opacity: var(--opacity);
+    filter: grayscale(var(--grayscale));
+  }
+  .width {
+      width: -webkit-fill-available;
+  }
+  .hl {
+    color: var(--base);
+  }
+  /*
+    misc styles, nothing to do with CSS variables
+  */
+  body {
+    text-align: center;
+    background: #330072;
+    color: white
+    ;
+    font-family: 'helvetica neue', sans-serif;
+    font-weight: 100;
+    font-size: 50px;
+  }
+
+.list{
+    font-size: 32px;
+}
+  .controls {
+    margin-bottom: 50px;
+  }
+  input {
+    width: 100px;
+  }
