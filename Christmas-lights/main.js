@@ -1,5 +1,4 @@
 // Select every li
-let lights = document.querySelectorAll('li');
 let evens = document.querySelectorAll('li:nth-child(even)');
 let odds = document.querySelectorAll('li:nth-child(odd)');
 const start = document.querySelector('.start');
@@ -25,14 +24,10 @@ function oddTimer(){
 start.addEventListener('click', e =>{
     setInterval(evenTimer, 1500);
     setInterval(oddTimer, 750);
-
 } );
-
 stop.addEventListener('click', e => {
     clearInterval(toggleEvens);
     clearInterval(toggleOdds);
-
-
 });
 
 
