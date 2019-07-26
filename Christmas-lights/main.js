@@ -21,6 +21,7 @@ function oddTimer(){
     }
 };
 
+
 start.addEventListener('click', e =>{
     setInterval(evenTimer, 1500);
     setInterval(oddTimer, 750);
