@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div class="colorBox">
+        Hello
+    </div>
+<form action="submit">
+    Enter a 3 digit color value between 1 and 255 for each box.
+
+    <input type="number" name="red" id="red" pattern="[0-9]{3}?,">
+    <input type="number" name="blue" id="blue" pattern="[0-9]{3}?,">
+    <input type="number" name="green" id="green" pattern="[0-9]{3}">
+
+</form>
+<button id="colorStart">Start</button>
+<button id="colorStop">Stop</button>
+
+</body>
+<script src="main.js"></script>
+</html>
