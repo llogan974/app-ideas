@@ -22,46 +22,24 @@ Loop through TR
     Create TD. If there is data, enter it. If not, blank TD
     End TR.
 */
-const jsonInput = document.querySelector('#JSONinput').value;
-// const csvKeys = JSON.parse(jsonInput); // turn it into an object
-// const tableHeaders = Object.getOwnPropertyNames(csvKeys[0]);
-// const tableContents = Object.values(csvKeys);
+const output = document.querySelector('.csvTable');
+const jsonInput = JSON.parse(document.querySelector('#JSONinput').value); // an array of objects
 
-const csvOutput = document.querySelector('.csvTable');
+// Get just the top row, an array of the keys
+const headers = Object.keys(jsonInput[0]);
 
-console.log(jsonInput);
-// Create Table Headers
-/*eslint-disable */
-// console.log(tableHeaders.length);
+// map over each of the header items
+const csvHeaders = headers.map(header => `"${header}"`);
+output.innerHTML = `${csvHeaders}</br>`;
 
-function getJson() {
-  for (var i = 0; i < tableHeaders.length; i++) {
-    if (tableHeaders.length - 1 === i) {
-      csvOutput.innerHTML += `"` + tableHeaders[i] + `"</br>`;
-      return;
-    }
-    csvOutput.innerHTML += `"` + tableHeaders[i] + `",`;
-  }
+// Object.values returns an array of objects enumerable properties
+// Object.entries returns and array of enumerable key values
+const values = Object.values(jsonInput); // an array of objects
+
+// Loop through array
+for (value of values) {
+  // loop through objects in the array. value is an object
+  const csvValues = Object.values(value); // get an array of the values
+  const csvValue = csvValues.map(x => `"${x}"`);
+  output.innerHTML += `${csvValue}</br>`;
 }
-
-function getData() {
-  for (var tableContent of tableContents) {
-    var values = Object.values(tableContent);
-
-    for (var i = 0; i < values.length; ++i) {
-      if (values.length - 1 === i) {
-        csvOutput.innerHTML += `"` + values[i] + `"</br>`;
-      } else {
-        csvOutput.innerHTML += `"${values[i]}",`;
-      }
-    }
-  }
-
-  // csvOutput.innerHTML += `"${Object.values(content)}",<br>`;
-}
-getJson();
-getData();
-/*eslint-evable */
-// Table Headers
-// console.log(Object.keys(csvKeys));
-// console.log(Object.values(csvKeys));

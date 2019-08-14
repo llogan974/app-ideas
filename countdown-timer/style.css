@@ -1,0 +1,43 @@
+.clock {
+
+}
+
+#days{
+    font-size: 72px;
+}
+#hours{
+    font-size: 72px;
+
+}
+#minutes{
+    font-size: 72px;
+
+}
+.seconds{
+    font-size: 72px;
+    /* position: absolute;
+    top: 0;
+    left: 0; */
+    height: 100px;
+    background: green;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transof: translateY(0px);
+    transition:  transform 0.5s;
+    /* max-height: 0px; */
+}
+.seconds-active{
+    transition: translateY(-200px);
+    z-index: 999;
+}
+
+.eventForm{
+    display: grid;
+    grid-template-columns: 200px 100px;
+    grid-template-rows: 40px 40px 40px 40px;
+    font-size: 20px;
+    align-items: center;
+    background: white;
+    z-index: 999;
+}

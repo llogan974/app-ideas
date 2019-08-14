@@ -1,5 +1,18 @@
-.colorBox{
-    height: 40vh;
-    width: 40vw;
-    border: 2px solid green;
+:root{
+    --colorStart: rgb(0,0,0);
+    --colorChanged: rgb(256, 256, 256);
 }
+
+ /* The animation code */
+ @keyframes example {
+    from {background-color: var(--colorStart)}
+    to {background-color: var(--colorChanged);}
+  }
+
+  /* The element to apply the animation to */
+  .colorBox {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    animation-name: example;
+  }

@@ -12,14 +12,20 @@
         Hello
     </div>
 <form action="submit">
-    Enter a 3 digit color value between 1 and 255 for each box.
+    Enter a 2 digit hex color value between using A-F and 0-9;
 
-    <input type="number" name="red" id="red" pattern="[0-9]{3}?,">
-    <input type="number" name="blue" id="blue" pattern="[0-9]{3}?,">
-    <input type="number" name="green" id="green" pattern="[0-9]{3}">
+    <input type="string" name="red" id="red" pattern="[a-fA-F0-9]{2}">
+    <input type="range" name="redChangeInt" id="redChangeInt" min="0" max="256" step="2">
+
+    <input type="string" name="blue" id="blue" pattern="[a-fA-F0-9]{2}">
+    <input type="range" name="blueChangeInt" id="blueChangeInt" min="0" max="256" step="2">
+
+    <input type="string" name="green" id="green" pattern="[a-fA-F0-9]{2}">
+    <input type="range" name="greenChangeInt" id="greenChangeInt" min="0" max="256" step="2">
+
 
 </form>
-<button id="colorStart">Start</button>
+<button id="colorStart" onClick=>Start</button>
 <button id="colorStop">Stop</button>
 
 </body>
