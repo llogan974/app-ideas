@@ -13,15 +13,6 @@ in your first implementation. use `Object.keys()` and `Object.values`
 If you choose to implement this in JavaScript don't use complicated looping in your first implementation. Instead, use Object.keys() and Object.values to generate CSV for the header and data rows.
 */
 
-/*
-First Row, if there is a comma, add TH.
-End TH
-
-Loop through TR
-    Create TR
-    Create TD. If there is data, enter it. If not, blank TD
-    End TR.
-*/
 const output = document.querySelector('.csvTable');
 const jsonInput = JSON.parse(document.querySelector('#JSONinput').value); // an array of objects
 
