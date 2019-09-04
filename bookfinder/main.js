@@ -14,6 +14,7 @@ function stringReplace(text) {
 stringReplace(queryText);
 
 function mainQuery() {
+    event.preventDefault();
     booksGrid.innerHTML = ' ';
     let queryText = document.querySelector('#query').value;
 
