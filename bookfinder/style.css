@@ -1,0 +1,21 @@
+.resultsGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+.gridItem{
+    border: 2px solid red;
+    box-shadow: 5px 8px 10px salmon;
+    padding: 20px;
+}
+ p{
+    max-height: 231px;
+    overflow: hidden;
+    max-width: 33ch;
+}
+
+.gridItem:hover{
+    color: white;
+    background: lightsalmon;
+    transform: scale(1.1);
+}
